@@ -1,7 +1,8 @@
 
 <footer>
 <div class="footer">
-        <br>
-        <p>Copyright © 2018 All Rights Reserved.</p>
+        <div class="copyright">
+              &copy;   <a href="index.jsp" target="_blank">RDiamonds 2018</a> Todos los derechos reservados.  
+            </div>
       </div>
     </footer>
