@@ -42,7 +42,7 @@
     .social {
 	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
 	left: -40px; /* Establecemos la barra a la derecha */
-	top: 400px; /* Bajamos la barra 200px de arriba a abajo */
+	top: 300px; /* Bajamos la barra 200px de arriba a abajo */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
@@ -75,6 +75,9 @@
     /*BODY*/
     body{
         background-color: #b0b0bb;
+     }
+     #login{
+         background-image: url("../img/");
      }
     /*FIN BODY*/
     

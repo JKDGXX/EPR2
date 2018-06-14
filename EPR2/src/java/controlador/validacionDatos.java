@@ -32,7 +32,7 @@ public class validacionDatos extends HttpServlet {
             String contraseña1 = request.getParameter("contrasena1");
             if (valorBoton.equals("creacionCuenta")) {
                 out.println(insert.crearCuenta(nombreUsuario, contraseña, nombreCompleto, correo));
-            } else if (valorBoton.equals("ingresoCuenta")) {
+            } else if (valorBoton.equals("Ingresar")) {
                 out.println(validacionLogin.validacionLogin(nombreUsuario1, contraseña1));
             }
 
