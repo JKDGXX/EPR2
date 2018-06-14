@@ -1,0 +1,93 @@
+/*NAV*/
+.navbar {
+    background-color: #29272bde;
+  }
+  .navbar .navbar-brand {
+    color: #ffffff;
+  }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #47c4d1;
+  }
+  .navbar .navbar-text {
+    color: #ffffff;
+  }
+  .navbar .navbar-text a {
+    color: #47c4d1;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #47c4d1; 
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #47c4d1;
+  }
+  /*FIN NAV*/
+
+
+  /*REDES SOCIALES*/
+    .social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: -40px; /* Establecemos la barra a la derecha */
+	top: 400px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#95b5fcab;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #d4f3ff;}
+	.social ul li .icon-instagram {background: #ff43535e;}
+ 
+	.social ul li a:hover {
+		background: rgba(49, 40, 40, 0.671); /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    }
+    /*FIN REDES SOCIALES*/
+
+
+    /*BODY*/
+    body{
+        background-color: #b0b0bb;
+     }
+    /*FIN BODY*/
+    
+    /*CAROUSEL*/
+    #imagen{
+        width: 100%;
+        height: 520px;
+    }
+    /*FIN CAROUSEL*/
+    
+    
+    /*FOOTER*/
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #29272bde;
+        color: white;
+        text-align: center;
+    }
+    /*FIN FOOTER*/
+
