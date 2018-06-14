@@ -11,12 +11,13 @@
 
             <li id="contacto"><a href="crearCuenta.jsp">Crear Cuenta</a></li>
             <li id="contacto"><a href="login.jsp">Ingresar</a></li>
+             <li id="descargar"><a href="Descargar.jsp">Descargar</a></li>
         </ul>
     </div>
 </nav> 
 
             <li id="contacto"><a href="crearCuenta.jsp">Registrar</a></li>
-             <li id="descargar"><a href="Descargar.jsp">Descargar</a></li>
+            
           </ul>
         </div>
       </nav> 
