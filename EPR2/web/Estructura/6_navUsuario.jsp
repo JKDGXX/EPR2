@@ -8,15 +8,18 @@
         </ul>  
 
 
+        <form action="validacionDatos" method="post">
+            <div class="btn-group" id="opcionesAdministrador">
 
-        <div class="btn-group" id="opcionesAdministrador">
-            <button type="button" class="btn btn-default dropdown-toggle"
-                    data-toggle="dropdown"><img src="img/iconos/opciones.png" width="20" height="20"><span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Cambiar Contraseña</a></li>
-                <li><a href="#">Salir</a></li>
-            </ul>
-        </div>
+                <button type="button" class="btn btn-default dropdown-toggle"
+                        data-toggle="dropdown"><img src="img/iconos/opciones.png" width="20" height="20"><span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" id="menu">
+                    <li><button id="buttonOpciones" name="boton" value="cambiarContraseña">Cambiar Contraseña</button></li>
+                    <li><button id="buttonOpciones" name="boton" value="salir">Salir</button></li>
+                </ul>
+
+            </div>
+        </form>
     </div>
 </nav> 

@@ -9,13 +9,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.insertarDatos;
 import modelo.consultas;
-
+import modelo.mensajes;
 @WebServlet(name = "validacionDatos", urlPatterns = {"/validacionDatos"})
 public class validacionDatos extends HttpServlet {
 
     insertarDatos insert = new insertarDatos();
     consultas validacionLogin = new consultas();
-
+    mensajes msg=new mensajes();
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -34,6 +34,8 @@ public class validacionDatos extends HttpServlet {
                 out.println(insert.crearCuenta(nombreUsuario, contraseña, nombreCompleto, correo));
             } else if (valorBoton.equals("Ingresar")) {
                 out.println(validacionLogin.validacionLogin(nombreUsuario1, contraseña1));
+            } else if(valorBoton.equals("salir")){
+                out.println(msg.SalirSesion());
             }
 
         }

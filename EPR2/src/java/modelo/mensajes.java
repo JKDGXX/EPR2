@@ -33,6 +33,17 @@ public class mensajes {
                 + "location.href='login.jsp';"
                 + "</script>";
     }
-  
+    public String SalirSesion(){
+        
+        return msg="<script>"
+                + "var v;"
+                + "v=confirm('¿Desea Salir');"
+                + "if(v){"
+                + "location.href='login.jsp';"
+                + "}else{"
+                + "location.href='juego.jsp';"
+                + "}"
+                + "</script>";
+    }
 
 }
