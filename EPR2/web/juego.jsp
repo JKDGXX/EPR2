@@ -8,7 +8,7 @@
 
 <%@include file="Estructura/2_favicon.jsp" %>
 
-<%@include file="Estructura/4_redesSociales.jsp" %>
+
 
 
 
