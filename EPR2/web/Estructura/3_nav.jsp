@@ -12,8 +12,7 @@
             <li id="contacto"><a href="login.jsp">Iniciar Sesion</a></li> 
         </ul>
     </div>
-</nav> 
-
+</nav>
 
 
 
