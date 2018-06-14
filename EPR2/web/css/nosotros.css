@@ -1,9 +1,5 @@
-#altura_img_carrousel{
-
-    height:377px;
-}
 div#contenedor{
-    background:#b0b0bb;
+    background: red;
     overflow:hidden;
 }
 div#centro{
