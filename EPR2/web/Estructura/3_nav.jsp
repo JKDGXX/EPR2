@@ -8,6 +8,7 @@
             <li id="juego"><a href="#">Juego</a></li>
             <li id="nosotros"><a href="#">Nosotros</a></li>
             <li id="contacto"><a href="contacto.jsp">Contacto</a></li>
+            <li id="contacto"><a href="crearCuenta.jsp">Crear Cuenta</a></li>
           </ul>
         </div>
       </nav> 
