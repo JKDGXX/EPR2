@@ -6,3 +6,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="stylesheet" type="text/css" href="css/formularioContacto.css">
+        <link rel="stylesheet" type="text/css" href="css/nosotros.css">
