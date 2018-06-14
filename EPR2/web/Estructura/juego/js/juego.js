@@ -7,7 +7,7 @@ function preload() {
     game.load.spritesheet('personaje', 'assets/dude.png', 32, 48);
     game.load.audio('punto', 'assets/numkey.wav');
 }
-
+ 
 var plataforma;
 var suelo;
 var personaje;
@@ -68,68 +68,68 @@ function create() {
 	
 	//sonidos
 	sndPunto = game.add.audio('punto');
-	
-}
-
-function update() {
-	game.physics.arcade.collide(personaje, plataforma);
-	
-	game.physics.arcade.overlap(diamantes, suelo, perderVida, null, this);
-	game.physics.arcade.overlap(bandeja, diamantes, recogerDiamante, null, this); 
-	
-	if(personaje.body.velocity.x > 0 && personaje.x > game.giro){
-		personaje.body.velocity.x *= -1;
-		game.giro = game.rnd.integerInRange(100, personaje.x-1);
-		personaje.animations.play('left');
-		soltarDiamante();
-	}
-	
-	if(personaje.body.velocity.x < 0 && personaje.x < game.giro){
-		personaje.body.velocity.x *= -1;
-		game.giro = game.rnd.integerInRange(personaje.x+1, 688);
-		personaje.animations.play('right');
-		soltarDiamante();
-	}
-	
-	bandeja.body.x = game.input.mousePointer.x - bandeja.width / 2;
-}
-
-function soltarDiamante() {
-    var diamante = diamantes.create(personaje.x, 100, 'diamante');
-    game.physics.arcade.enable(diamante);
-    diamante.body.gravity.y = game.gravedadDiamantes;
-}
-
-function subirNivel(){
-	game.gravedadDiamantes *= 1.2;
-	personaje.body.velocity.x *= 1.2;
-	game.nivel += 1;
-	txtNivel.setText('Nivel: '+game.nivel);
-}
-
-function recogerDiamante(bandeja, diamante){
-	diamante.kill();
-	game.puntaje += 5;
-	txtPuntaje.setText('Puntaje: '+game.puntaje);
-	sndPunto.play();
-}
-
-function perderVida(suelo, diamante){
-	diamante.kill();
-	game.vidas -= 1;
-	txtVidas.setText('Vidas: '+game.vidas);
-	
-	if(game.vidas == 0){
-		suelo.kill();
-		bandeja.kill();
-		game.add.text(200, 250, 'Perdiste', {font:'80px Arial', fill: '#000'});
-		game.add.text(200, 350, 'Nivel: '+game.nivel, {font:'30px Arial', fill: '#000'});
-		game.add.text(200, 400, 'Puntaje: '+game.puntaje, {font:'30px Arial', fill: '#000'});
-	}
-       
-}
-
-function reiniciar(){
-		this.state.start(game);
-	}
+//	
+//}
+//
+//function update() {
+//	game.physics.arcade.collide(personaje, plataforma);
+//	
+//	game.physics.arcade.overlap(diamantes, suelo, perderVida, null, this);
+//	game.physics.arcade.overlap(bandeja, diamantes, recogerDiamante, null, this); 
+//	
+//	if(personaje.body.velocity.x > 0 && personaje.x > game.giro){
+//		personaje.body.velocity.x *= -1;
+//		game.giro = game.rnd.integerInRange(100, personaje.x-1);
+//		personaje.animations.play('left');
+//		soltarDiamante();
+//	}
+//	
+//	if(personaje.body.velocity.x < 0 && personaje.x < game.giro){
+//		personaje.body.velocity.x *= -1;
+//		game.giro = game.rnd.integerInRange(personaje.x+1, 688);
+//		personaje.animations.play('right');
+//		soltarDiamante();
+//	}
+//	
+//	bandeja.body.x = game.input.mousePointer.x - bandeja.width / 2;
+//}
+//
+//function soltarDiamante() {
+//    var diamante = diamantes.create(personaje.x, 100, 'diamante');
+//    game.physics.arcade.enable(diamante);
+//    diamante.body.gravity.y = game.gravedadDiamantes;
+//}
+//
+//function subirNivel(){
+//	game.gravedadDiamantes *= 1.2;
+//	personaje.body.velocity.x *= 1.2;
+//	game.nivel += 1;
+//	txtNivel.setText('Nivel: '+game.nivel);
+//}
+//
+//function recogerDiamante(bandeja, diamante){
+//	diamante.kill();
+//	game.puntaje += 5;
+//	txtPuntaje.setText('Puntaje: '+game.puntaje);
+//	sndPunto.play();
+//}
+//
+//function perderVida(suelo, diamante){
+//	diamante.kill();
+//	game.vidas -= 1;
+//	txtVidas.setText('Vidas: '+game.vidas);
+//	
+//	if(game.vidas == 0){
+//		suelo.kill();
+//		bandeja.kill();
+//		game.add.text(200, 250, 'Perdiste', {font:'80px Arial', fill: '#000'});
+//		game.add.text(200, 350, 'Nivel: '+game.nivel, {font:'30px Arial', fill: '#000'});
+//		game.add.text(200, 400, 'Puntaje: '+game.puntaje, {font:'30px Arial', fill: '#000'});
+//	}
+//       
+//}
+//
+//function reiniciar(){
+//		this.state.start(game);
+//	}
 
