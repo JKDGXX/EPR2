@@ -2,7 +2,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
+<%@include file="Estructura/2_favicon.jsp" %>
 <html>
     
     <head>
