@@ -8,6 +8,7 @@ function preload() {
     game.load.audio('punto', 'assets/numkey.wav');
 }
 
+var plataforma;
 var suelo;
 var personaje;
 var diamantes;
