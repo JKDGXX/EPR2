@@ -1,4 +1,4 @@
-<body background="img/contacto.jpg">
+<body id="fondo">
 <div class="form-style-10">
         <h1>Contacto<span>Envianos un correo a través de este formulario</span></h1>
         <form action="ControladorContacto" method="post">

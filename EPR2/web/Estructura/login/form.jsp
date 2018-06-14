@@ -1,4 +1,4 @@
-<body id="login">
+<body id="fondo">
     <br><br>
 <div class="form-style-10">
         <h1>Iniciar Sesion</h1>

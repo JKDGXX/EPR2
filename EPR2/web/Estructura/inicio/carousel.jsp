@@ -1,4 +1,5 @@
-        <div class="container"> 
+<body id="fondo">      
+<div class="container"> 
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner" >
@@ -16,3 +17,4 @@
                   </div>
                 </div>
               </div>
+</body> 
