@@ -1,4 +1,3 @@
-
 <%@include file="Estructura/titulos/login.jsp" %>
 <%@include file="Estructura/1_links.jsp" %>
 <%@include file="Estructura/3_nav.jsp" %>

@@ -8,17 +8,13 @@
             <li id="nosotros"><a href="#">Nosotros</a></li>
             <li id="contacto"><a href="contacto.jsp">Contacto</a></li>
             <li id="contacto"><a href="crearCuenta.jsp">Registrar</a></li>
-            <li id="descargar"><a href="Descargar.jsp">Descargar</a></li>
-            <li id="contacto"><a href="login.jsp">Ingresar</a></li>
-
-             <li id="descargar"><a href="Descargar.jsp">Descargar Juego</a></li>
-             <li id="contacto"><a href="crearCuenta.jsp">Registrar</a></li>
-
+            <li id="contacto"><a href="login.jsp">Iniciar Sesion</a></li>
+            <li id="descargar"><a href="Descargar.jsp">Descargar Juego</a></li>
         </ul>
     </div>
 </nav> 
 
 
-            
- 
+
+
 

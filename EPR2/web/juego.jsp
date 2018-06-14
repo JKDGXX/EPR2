@@ -5,6 +5,7 @@
 <%@include file="Estructura/5_footer.jsp" %>
 
 
+
 <script type="text/javascript" src="js/phaser.min.js"></script>
 <script type="text/javascript" src="js/juego.js"></script>
 
