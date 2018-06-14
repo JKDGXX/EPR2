@@ -108,6 +108,17 @@
    
     }
     #opcionesAdministrador{
-        margin-left: 1000px;
+        margin-left: 1099px;
         margin-top: 9px;
+    }
+    #buttonOpciones{
+        width: 158px;
+        background-color: #fff;
+        border: #fff;
+    }
+    #buttonOpciones:hover{
+        background-color: #888;
+    }
+    #menu{
+        margin-left: -105px;
     }
