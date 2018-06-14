@@ -1,4 +1,5 @@
-<body id="fondo">
+
+<div id="fondo">
     <div id="centro">
         <h1 style="text-align: center">Luxury</h1>
         <p>
@@ -13,5 +14,5 @@
             industria de los videojuegos.
         </p>
     </div>
-</body>
+</div>
 
