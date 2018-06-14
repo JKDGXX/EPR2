@@ -19,4 +19,12 @@ body, html{
 .main{
     margin:50px 15px;
 }
+#RDiamondlogo{
+    width:300px;
+    height:300px;
+}
+.centrado{
+    	margin:10px auto;
+	display:block;
+}
 
