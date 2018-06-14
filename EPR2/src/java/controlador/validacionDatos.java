@@ -8,27 +8,34 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.insertarDatos;
+import modelo.consultas;
+
 @WebServlet(name = "validacionDatos", urlPatterns = {"/validacionDatos"})
 public class validacionDatos extends HttpServlet {
-    
-    insertarDatos crearCuenta=new insertarDatos();
-    
+
+    insertarDatos insert = new insertarDatos();
+    consultas validacionLogin = new consultas();
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            
+
+            String valorBoton = request.getParameter("boton");
+
             String nombreUsuario = request.getParameter("nombreUsuario");
             String contraseña = request.getParameter("contrasena");
             String nombreCompleto = request.getParameter("nombreCompleto");
             String correo = request.getParameter("correo");
-            
-            String valorBoton = request.getParameter("boton");
-            
+
+            String nombreUsuario1 = request.getParameter("nombreUsuario1");
+            String contraseña1 = request.getParameter("contrasena1");
             if (valorBoton.equals("creacionCuenta")) {
-                out.println(crearCuenta.crearCuenta(nombreUsuario, contraseña, correo, correo));
+                out.println(insert.crearCuenta(nombreUsuario, contraseña, nombreCompleto, correo));
+            } else if (valorBoton.equals("ingresoCuenta")) {
+                out.println(validacionLogin.validacionLogin(nombreUsuario1, contraseña1));
             }
-            
+
         }
     }
 
