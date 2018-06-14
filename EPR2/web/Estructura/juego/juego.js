@@ -4,7 +4,7 @@ function preload() {
 	game.load.image('fondo', 'img/juego/sky.png');
     game.load.image('plataforma', 'img/juego/platform.png');
     game.load.image('diamante', 'img/juego/diamond.png');
-    game.load.spritesheet('personaje', 'assets/dude.png', 32, 48);
+    game.load.spritesheet('personaje', 'img/juego/dude.png', 32, 48);
     game.load.audio('punto', 'assets/numkey.wav');
 }
  
