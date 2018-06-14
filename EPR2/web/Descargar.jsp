@@ -8,7 +8,6 @@
         <title>Error</title>
     </head>
     <body>
-        <h1>Error: El juego aun no se puede descargar</h1>
-        
+        <h1>Error: El juego aun no se puede </h1>
     </body>
 </html>

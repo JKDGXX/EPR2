@@ -9,7 +9,7 @@
             <li id="nosotros"><a href="#">Nosotros</a></li>
             <li id="contacto"><a href="contacto.jsp">Contacto</a></li>
             <li id="contacto"><a href="crearCuenta.jsp">Registrar</a></li>
-             <li id="contacto"><a href="Descargar.jsp">Descargar</a></li>
+             <li id="descargar"><a href="Descargar.jsp">Descargar</a></li>
           </ul>
         </div>
       </nav> 
