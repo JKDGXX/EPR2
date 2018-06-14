@@ -5,7 +5,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li id="inicio"><a href="index.jsp">Inicio</a></li>
-            <li id="nosotros"><a href="#">Nosotros</a></li>
+            <li id="nosotros"><a href="nosotros.jsp">Nosotros</a></li>
             <li id="contacto"><a href="contacto.jsp">Contacto</a></li>
             <li id="contacto"><a href="crearCuenta.jsp">Registrar</a></li>
             <li id="contacto"><a href="login.jsp">Iniciar Sesion</a></li>
