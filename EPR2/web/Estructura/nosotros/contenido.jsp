@@ -1,4 +1,3 @@
-
 <div id="fondo">
     <div id="centro">
         <h1 style="text-align: center">Luxury</h1>
