@@ -1,8 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <body>
-        <div id="fondo">
+    <body id="fondo">
+        <div>
             <div id="centro">
                 <h1 style="text-align: center">Luxury</h1>
                 <p>
