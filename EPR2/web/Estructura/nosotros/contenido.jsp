@@ -2,7 +2,7 @@
     <div id="centro">
         <img id="RDiamondlogo" class="centrado" src="img/RDiamond-logo.png" alt="Logo de juego" title="RDiamond!"/>
         <h1 style="text-align: center">Luxury</h1>
-        <p>
+        <p style="text-align: center">
             Luxury grupo de desarrollo de videojuegos en Chile, tiene su inicio en 2018 con el fin de meterse <br>
             de lleno en la industria de los videojuegos que viene en un alza descomunal.
             <br>
