@@ -1,1 +1,1 @@
-<tittle>.:Registro:.</tittle>
+<title>.:Registro:.</title>
