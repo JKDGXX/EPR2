@@ -1,3 +1,10 @@
+/*LOGO*/
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+/*FIN LOGO*/
+
 /*NAV*/
 .navbar {
     background-color: #29272bde;
