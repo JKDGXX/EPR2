@@ -90,4 +90,8 @@
         text-align: center;
     }
     /*FIN FOOTER*/
-
+    #myCarousel{
+       
+       border: 5px solid #fff;
+   
+    }
