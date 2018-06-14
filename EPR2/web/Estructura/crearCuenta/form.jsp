@@ -1,3 +1,4 @@
+<body id="fondo">
 <form action="validacionDatos" method="post">
 
     <div>
@@ -26,3 +27,4 @@
     </div>
 
 </form>
+</body>
