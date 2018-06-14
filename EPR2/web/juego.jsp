@@ -6,6 +6,13 @@
 <%@include file="Estructura/2_favicon.jsp" %>
 
 
+<%@include file="Estructura/2_favicon.jsp" %>
+
+
+
+
+
 <script type="text/javascript" src="Estructura/juego/phaser.min.js"></script>
 <script type="text/javascript" src="Estructura/juego/juego.js"></script>
+
 
