@@ -4,15 +4,15 @@
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner" >
                     <div class="item active">
-                      <img src="img/carousel/dallas.JPG" id="imagen">
+                      <img src="img/carousel/c1.jpg" id="imagen">
                     </div>
               
                     <div class="item">
-                      <img src="img/carousel/002.png" id="imagen">
+                      <img src="img/carousel/c2.jpg" id="imagen">
                     </div>
                   
                     <div class="item">
-                      <img src="img/carousel/ban.jpg" id="imagen">
+                      <img src="img/carousel/c3.jpg" id="imagen">
                     </div>
                   </div>
                 </div>
