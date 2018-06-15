@@ -41,12 +41,15 @@ public class validacionDatos extends HttpServlet {
             } else if (valorBoton.equals("Ingresar")) {
                 out.println(c.validacionLogin(nombreUsuario1, contraseña1));
                 request.getSession().setAttribute("nombreUsuario1", nombreUsuario1);
+                request.getSession().setAttribute("contrasena1", contraseña1);
             } else if (valorBoton.equals("salir")) {
                 out.println(msg.SalirSesion());
             } else if (valorBoton.equals("opcionCambiarContraseña")) {
                 response.sendRedirect("cambiarContrasena.jsp");
             } else if(valorBoton.equals("cambioContraseña")){
                 out.println( update.actulizarContaseña(contraseñaNueva, nombreUsuario2, contraseñaActual));
+            } else if(valorBoton.equals("detallesCuenta")){
+                response.sendRedirect("detallesCuenta.jsp");
             }
 
         }

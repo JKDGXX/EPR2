@@ -16,6 +16,7 @@
                 </button>
                 <ul class="dropdown-menu" role="menu" id="menu">
                     <li><button id="buttonOpciones" name="boton" value="opcionCambiarContraseña">Cambiar Contraseña</button></li>
+                    <li><button id="buttonOpciones" name="boton" value="detallesCuenta">Detalles De Cuenta</button></li>
                     <li><button id="buttonOpciones" name="boton" value="salir">Salir</button></li>
                 </ul>
 
