@@ -59,7 +59,7 @@ public class validacionDatos extends HttpServlet {
 
                 out.println(insert.envioMensaje(nombre, correo1, mensaje));
             } else if(valorBoton.equals("eliminarCuenta")){
-            
+                  
             }
 
         }

@@ -13,7 +13,7 @@ public class eliminarDatos {
 
         try{
         coneccion.Conexion();
-        String SQL = "delete from cliente where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
+        String SQL = "delete from usuario where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
         coneccion.getSentencia().execute(SQL);
         coneccion.cerraConexion();
         }catch(Exception Error){
