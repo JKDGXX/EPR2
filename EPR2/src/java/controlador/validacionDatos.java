@@ -11,7 +11,7 @@ import modelo.insertarDatos;
 import modelo.consultas;
 import modelo.mensajes;
 import modelo.actualizarDatos;
-
+import modelo.eliminarDatos;
 @WebServlet(name = "validacionDatos", urlPatterns = {"/validacionDatos"})
 public class validacionDatos extends HttpServlet {
 
@@ -19,7 +19,7 @@ public class validacionDatos extends HttpServlet {
     consultas c = new consultas();
     mensajes msg = new mensajes();
     actualizarDatos update = new actualizarDatos();
-
+    eliminarDatos delete=new eliminarDatos();
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -58,6 +58,8 @@ public class validacionDatos extends HttpServlet {
             } else if (valorBoton.equals("enviarComentario")) {
 
                 out.println(insert.envioMensaje(nombre, correo1, mensaje));
+            } else if(valorBoton.equals("eliminarCuenta")){
+            
             }
 
         }
