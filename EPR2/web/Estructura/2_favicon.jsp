@@ -1,1 +1,1 @@
-<link rel="icon" href="img/logo.png" type="image/x-icon"/>
+<link rel="icon" href="img/RDiamond-logo.png" type="image/x-icon"/>
