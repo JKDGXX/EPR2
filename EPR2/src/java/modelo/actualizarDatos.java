@@ -14,18 +14,19 @@ public class actualizarDatos {
 
         try {
             coneccion.Conexion();
-            String SQL = "update usuario set contraseña='" + passNueva + "'where nombre_usuario='" + Usuario + "' and contraseña='" + passActual + "'";
-            coneccion.sentencia.executeUpdate(SQL);
+
             String SQL1 = "select * from usuario where nombre_usuario='" + Usuario + "' and contraseña='" + passActual + "'";
             coneccion.resultado = coneccion.sentencia.executeQuery(SQL1);
-            if(coneccion.getResultado().next()){
-            
+            if (coneccion.getResultado().next()) {
+
+                String SQL = "update usuario set contraseña='" + passNueva + "'where nombre_usuario='" + Usuario + "' and contraseña='" + passActual + "'";
+                coneccion.sentencia.executeUpdate(SQL);
                 this.retornoMensaje = msg.contraseñaActualizada();
-            
-            }else{
-                
+
+            } else {
+
                 this.retornoMensaje = msg.errorEnDatosCambioContraseña();
-                
+
             }
             coneccion.cerraConexion();
         } catch (Exception Error) {
