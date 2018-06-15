@@ -4,26 +4,16 @@
     String contraseñaV = (String) session.getAttribute("contrasena1");
     consultas select = new consultas(usuarioV, contraseñaV);
 %>
-
-<form>
-    <div>
-        <label for="nombreUsuario">Nombre De Usuario</label>
-        <input type="text" placeholder="<%=select.getUsuario()%>" readonly="readonly">
+    <body id="fondo">
+<div class="form-style-10">
+        <h1>Detalles De La Cuenta</h1>
+        <form>
+            <div class="inner-wrap">
+                <label>Nombre De Usuario<input type="text" placeholder="<%=select.getUsuario()%>" readonly="readonly"></label>
+                <label>Nombre<input type="text" placeholder="<%=select.getNombre()%>" readonly="readonly"></label>
+                <label>Contraseña<input type="text" placeholder="<%=select.getContraseña()%>" readonly="readonly"></label>
+                <label>Correo Electronico<input type="text" placeholder="<%=select.getCorreo()%>" readonly="readonly"></label>
+            </div>
+        </form>
     </div>
-
-    <div>
-        <label for="Nombre">Nombre Completo</label>
-        <input type="text" placeholder="<%=select.getNombre()%>" readonly="readonly">
-    </div>
-    <div>
-        <label for="Nombre">Contraseña</label>
-        <input type="text" placeholder="<%=select.getContraseña()%>" readonly="readonly">
-    </div>
-    
-    <div>
-        <label for="Nombre">Correo Electronico</label>
-        <input type="text" placeholder="<%=select.getCorreo()%>" readonly="readonly">
-    </div>
-
-
-</form>
+</body>
