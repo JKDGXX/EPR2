@@ -15,6 +15,7 @@ public class eliminarDatos {
         coneccion.Conexion();
         String SQL = "delete from usuario where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
         coneccion.getSentencia().execute(SQL);
+        retornoMensaje=msg.eliminarCuenta();
         coneccion.cerraConexion();
         }catch(Exception Error){
             this.retornoMensaje=msg.eliminarCuenta();

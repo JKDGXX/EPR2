@@ -75,9 +75,10 @@ public class mensajes {
 
     public String eliminarCuenta() {
         return msg = "<script>"
-                + "alert('CUENTA ELIMINAR CON EXITO !!!');"
+                + "alert('CUENTA ELIMINADA CON EXITO !!!');"
                 + "location.href='index.jsp';"
                 + "</script>";
     }
+
 
 }
