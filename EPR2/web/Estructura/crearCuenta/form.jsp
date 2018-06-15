@@ -1,7 +1,7 @@
 <body id="fondo">
     <br><br>
     <div class="form-style-10">
-        <h1>Iniciar Sesion</h1>
+        <h1>Registro</h1>
         <form action="validacionDatos" method="post">
             <div class="inner-wrap">
                 <label>Nombre De Usuario<input type="text" name="nombreUsuario" placeholder="Ingrese Usuario" required></label>
