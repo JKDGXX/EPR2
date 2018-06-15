@@ -79,6 +79,18 @@ public class mensajes {
                 + "location.href='index.jsp';"
                 + "</script>";
     }
+    public String errorEnDatos(){
+        return msg = "<script>"
+                + "alert('DATOS NO EXISTENTES !!!');"
+                + "location.href='eliminar.jsp';"
+                + "</script>";
+    }
+    public String errorEnDatosCambioContraseña(){
+        return msg = "<script>"
+                + "alert('DATOS NO EXISTENTES !!!');"
+                + "location.href='cambiarContrasena.jsp';"
+                + "</script>";
+    }
 
 
 }
