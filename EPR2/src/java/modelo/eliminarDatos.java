@@ -13,19 +13,19 @@ public class eliminarDatos {
 
         try {
             coneccion.Conexion();
-            String SQL = "delete from usuario where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
-            coneccion.getSentencia().execute(SQL);
             String SQL1 = "select * from usuario where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
-            coneccion.resultado=coneccion.sentencia.executeQuery(SQL1);
-            
-            if(coneccion.getResultado().next()){
-            
+            coneccion.resultado = coneccion.sentencia.executeQuery(SQL1);
+
+            if (coneccion.getResultado().next()) {
+
+                String SQL = "delete from usuario where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
+                coneccion.getSentencia().execute(SQL);
                 retornoMensaje = msg.eliminarCuenta();
-                
-            }else{
-                retornoMensaje=msg.errorEnDatos();
+
+            } else {
+                retornoMensaje = msg.errorEnDatos();
             }
-            
+
             coneccion.cerraConexion();
         } catch (Exception Error) {
             this.retornoMensaje = msg.errorGeneral();
