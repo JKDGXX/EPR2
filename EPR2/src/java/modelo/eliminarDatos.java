@@ -18,7 +18,7 @@ public class eliminarDatos {
         retornoMensaje=msg.eliminarCuenta();
         coneccion.cerraConexion();
         }catch(Exception Error){
-            this.retornoMensaje=msg.eliminarCuenta();
+            this.retornoMensaje=msg.errorGeneral();
         }
         return this.retornoMensaje;
     }

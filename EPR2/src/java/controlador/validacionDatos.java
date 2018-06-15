@@ -35,7 +35,7 @@ public class validacionDatos extends HttpServlet {
             String contraseñaNueva = request.getParameter("contrasenaNueva");
             String nombreCompleto = request.getParameter("nombreCompleto");
             String correo = request.getParameter("correo");
-
+            String pass = request.getParameter("pass");
             String nombre = request.getParameter("nom");
             String correo1 = request.getParameter("email");
             String mensaje = request.getParameter("mensaje");
@@ -56,10 +56,11 @@ public class validacionDatos extends HttpServlet {
             } else if (valorBoton.equals("detallesCuenta")) {
                 response.sendRedirect("detallesCuenta.jsp");
             } else if (valorBoton.equals("Enviar")) {
-
                 out.println(insert.envioMensaje(nombre, correo1, mensaje));
             } else if(valorBoton.equals("eliminarCuenta")){
-                out.println(delete.eliminarCuenta(nombreUsuario1, contraseña1));
+                response.sendRedirect("eliminar.jsp");
+            } else if(valorBoton.equals("Eliminar")){
+            out.println(delete.eliminarCuenta(nombre, pass));
             }
 
         }
