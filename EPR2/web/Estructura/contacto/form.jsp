@@ -9,7 +9,7 @@
             </div>
 
             <div class="button-section" style="text-align: center;">
-                <input type="submit" name="boton" value="enviarComentario">
+                <input type="submit" name="boton" value="Enviar">
             </div>
         </form>
     </div>

@@ -55,7 +55,7 @@ public class validacionDatos extends HttpServlet {
                 out.println(update.actulizarContaseña(contraseñaNueva, nombreUsuario2, contraseñaActual));
             } else if (valorBoton.equals("detallesCuenta")) {
                 response.sendRedirect("detallesCuenta.jsp");
-            } else if (valorBoton.equals("enviarComentario")) {
+            } else if (valorBoton.equals("Enviar")) {
 
                 out.println(insert.envioMensaje(nombre, correo1, mensaje));
             } else if(valorBoton.equals("eliminarCuenta")){
