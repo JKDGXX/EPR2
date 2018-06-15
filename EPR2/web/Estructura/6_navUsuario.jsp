@@ -15,7 +15,7 @@
                         data-toggle="dropdown"><img src="img/iconos/opciones.png" width="20" height="20"><span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" id="menu">
-                    <li><button id="buttonOpciones" name="boton" value="cambiarContraseña">Cambiar Contraseña</button></li>
+                    <li><button id="buttonOpciones" name="boton" value="opcionCambiarContraseña">Cambiar Contraseña</button></li>
                     <li><button id="buttonOpciones" name="boton" value="salir">Salir</button></li>
                 </ul>
 

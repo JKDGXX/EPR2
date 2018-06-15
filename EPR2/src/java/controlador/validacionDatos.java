@@ -10,12 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 import modelo.insertarDatos;
 import modelo.consultas;
 import modelo.mensajes;
+import modelo.actualizarDatos;
 @WebServlet(name = "validacionDatos", urlPatterns = {"/validacionDatos"})
 public class validacionDatos extends HttpServlet {
 
     insertarDatos insert = new insertarDatos();
-    consultas validacionLogin = new consultas();
-    mensajes msg=new mensajes();
+    consultas c = new consultas();
+    mensajes msg = new mensajes();
+    actualizarDatos update= new actualizarDatos();
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -24,18 +26,27 @@ public class validacionDatos extends HttpServlet {
             String valorBoton = request.getParameter("boton");
 
             String nombreUsuario = request.getParameter("nombreUsuario");
+            String nombreUsuario1 = request.getParameter("nombreUsuario1");
+            String nombreUsuario2 = request.getParameter("usuario2");
             String contraseña = request.getParameter("contrasena");
+            String contraseñaActual = request.getParameter("contrasenaActual");
+            String contraseñaNueva = request.getParameter("contrasenaNueva");
             String nombreCompleto = request.getParameter("nombreCompleto");
             String correo = request.getParameter("correo");
-
-            String nombreUsuario1 = request.getParameter("nombreUsuario1");
+        
+            
             String contraseña1 = request.getParameter("contrasena1");
             if (valorBoton.equals("Crear")) {
                 out.println(insert.crearCuenta(nombreUsuario, contraseña, nombreCompleto, correo));
             } else if (valorBoton.equals("Ingresar")) {
-                out.println(validacionLogin.validacionLogin(nombreUsuario1, contraseña1));
-            } else if(valorBoton.equals("salir")){
+                out.println(c.validacionLogin(nombreUsuario1, contraseña1));
+                request.getSession().setAttribute("nombreUsuario1", nombreUsuario1);
+            } else if (valorBoton.equals("salir")) {
                 out.println(msg.SalirSesion());
+            } else if (valorBoton.equals("opcionCambiarContraseña")) {
+                response.sendRedirect("cambiarContrasena.jsp");
+            } else if(valorBoton.equals("cambioContraseña")){
+                out.println( update.actulizarContaseña(contraseñaNueva, nombreUsuario2, contraseñaActual));
             }
 
         }

@@ -45,5 +45,20 @@ public class mensajes {
                 + "}"
                 + "</script>";
     }
+    public String contraseñaActualizada(){
+        
+        return msg="<script>"
+                + "alert('Contraseña Actualizada Con Exito !!!');"
+                + "location.href='login.jsp';"
+                + "</script>";
+    }
+    public String noExisteRegistro(){
+        
+        return msg="<script>"
+                + "alert('CONTRASEÑA ERRONEA !!!');"
+                + "location.href='cambiarContasena.jsp';"
+                + "</script>";
+    }
+    
 
 }

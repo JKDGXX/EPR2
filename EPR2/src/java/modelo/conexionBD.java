@@ -13,7 +13,7 @@ public class conexionBD {
     String nombreBaseDatos = "webjuego";
     String url = "jdbc:mysql://localhost:3306/" + this.nombreBaseDatos;
     private String usuario = "root";
-    private String contraseña = "";
+    private String contraseña = "1234";
     String mensaje;
 
     public void Conexion() {
