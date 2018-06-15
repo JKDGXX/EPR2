@@ -46,7 +46,7 @@ public class validacionDatos extends HttpServlet {
                 out.println(msg.SalirSesion());
             } else if (valorBoton.equals("opcionCambiarContraseña")) {
                 response.sendRedirect("cambiarContrasena.jsp");
-            } else if(valorBoton.equals("cambioContraseña")){
+            } else if(valorBoton.equals("Cambiar Contraseña")){
                 out.println( update.actulizarContaseña(contraseñaNueva, nombreUsuario2, contraseñaActual));
             } else if(valorBoton.equals("detallesCuenta")){
                 response.sendRedirect("detallesCuenta.jsp");
