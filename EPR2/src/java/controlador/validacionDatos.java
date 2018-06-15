@@ -11,13 +11,15 @@ import modelo.insertarDatos;
 import modelo.consultas;
 import modelo.mensajes;
 import modelo.actualizarDatos;
+
 @WebServlet(name = "validacionDatos", urlPatterns = {"/validacionDatos"})
 public class validacionDatos extends HttpServlet {
 
     insertarDatos insert = new insertarDatos();
     consultas c = new consultas();
     mensajes msg = new mensajes();
-    actualizarDatos update= new actualizarDatos();
+    actualizarDatos update = new actualizarDatos();
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -33,8 +35,11 @@ public class validacionDatos extends HttpServlet {
             String contraseñaNueva = request.getParameter("contrasenaNueva");
             String nombreCompleto = request.getParameter("nombreCompleto");
             String correo = request.getParameter("correo");
-        
-            
+
+            String nombre = request.getParameter("nom");
+            String correo1 = request.getParameter("email");
+            String mensaje = request.getParameter("mensaje");
+
             String contraseña1 = request.getParameter("contrasena1");
             if (valorBoton.equals("Crear")) {
                 out.println(insert.crearCuenta(nombreUsuario, contraseña, nombreCompleto, correo));
@@ -46,10 +51,13 @@ public class validacionDatos extends HttpServlet {
                 out.println(msg.SalirSesion());
             } else if (valorBoton.equals("opcionCambiarContraseña")) {
                 response.sendRedirect("cambiarContrasena.jsp");
-            } else if(valorBoton.equals("Cambiar Contraseña")){
-                out.println( update.actulizarContaseña(contraseñaNueva, nombreUsuario2, contraseñaActual));
-            } else if(valorBoton.equals("detallesCuenta")){
+            } else if (valorBoton.equals("Cambiar Contraseña")) {
+                out.println(update.actulizarContaseña(contraseñaNueva, nombreUsuario2, contraseñaActual));
+            } else if (valorBoton.equals("detallesCuenta")) {
                 response.sendRedirect("detallesCuenta.jsp");
+            } else if (valorBoton.equals("enviarComentario")) {
+
+                out.println(insert.envioMensaje(nombre, correo1, mensaje));
             }
 
         }

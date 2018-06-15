@@ -59,6 +59,12 @@ public class mensajes {
                 + "location.href='cambiarContasena.jsp';"
                 + "</script>";
     }
-    
+    public String mensajeEnviado(){
+        
+        return msg="<script>"
+                + "alert('MENSAJE ENVIADO CON EXITO !!!');"
+                + "location.href='contacto.jsp';"
+                + "</script>";
+    }
 
 }

@@ -13,7 +13,7 @@ public class insertarDatos {
         try {
             coneccion.Conexion();
             String SQL = "INSERT INTO usuario (nombre_usuario,contraseña,nombre,correo) VALUES ('" + nombreUsuario + "','" + contraseña + "','" + nombre + "','" + correo + "')";
-            coneccion.getSentencia().executeUpdate(SQL);
+        coneccion.getSentencia().execute(SQL);
             retornoMensaje = msg.ingresoDeDatosExitoso();
             coneccion.cerraConexion();
         } catch (Exception Error) {
@@ -21,6 +21,21 @@ public class insertarDatos {
         }
 
         return retornoMensaje;
+    }
+
+    public String envioMensaje(String nombre, String correo, String comentario) {
+
+        try {
+            coneccion.Conexion();
+            String SQL = "INSERT INTO comentarios (nombre,correo,comentario) VALUES ('" + nombre + "','" + correo + "','" + comentario + "')";
+            coneccion.getSentencia().execute(SQL);
+            this.retornoMensaje = msg.mensajeEnviado();
+            coneccion.cerraConexion();
+        } catch (Exception Error) {
+            this.retornoMensaje = msg.errorGeneral();
+        }
+
+        return this.retornoMensaje;
     }
 
 }
